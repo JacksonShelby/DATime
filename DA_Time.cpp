@@ -46,7 +46,7 @@ int main()
 //Tests assignment operator by setting time2 = time 1
 void assignmentTest() 
 {
-  Time time1(1, 25, 25, 15);
+  Time time1(1, 20, 25, 15);
   Time time2;
 
   time2 = time1;
@@ -109,6 +109,7 @@ void testTimeRelationalOperators()
 //Tests overloaded operator<< for displaying Time objects
 void testTimeOutStreamOperator()
 {
+  //29 hours to show how the timeManagement function converts the time
   Time time1(4, 6, 34, 7);
   Time time2(5, 29, 45, 56);
 
